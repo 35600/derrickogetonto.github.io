@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Personal Portfolio Website</title>
+         <link rel="stylesheet" href="styles.css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <body>
+<div id ="header">
+    <div class="container" > 
+        <nav>
+            <img src="projo/pjpj.jfif"class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                 <i class="fa fa-times"onclick="closemenu()"></i>
+            </ul>
+          
+            <i class="fa fa-bars"onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Website Developer</p>
+            <h1>Hi,i'm <span>Derrick OG</span><br> from Kenya</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="projo/projo9.jpg">
+           </div>
+
+            <div class="about-col-2">
+                   <h1 class="sub-title">About me</h1>
+                <p>Creative and detail-oriented Front-End Developer skilled in building responsive and user-friendly web applications. Proficient in HTML, CSS, JavaScript, and React, with a focus on performance optimization and accessibility. Passionate about crafting seamless user experiences and collaborating with teams to bring ideas to life.</p>
+           <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links"onclick="opentab('experience')">Experience</p>
+              <p class="tab-links"onclick="opentab('education')">Educatiuon</p>
+           </div>
+          <div class="tab-contets active-tab" id="skills">
+            <ul>
+                <li><span>Web Development</span><br>CSS, JavaScript, HTML</li>
+                 <li><span>OOP</span><br>Java, C++, C</li>
+
+            </ul>
+           </div>
+           <div class="tab-contets" id="experience">
+            <ul>
+                <li><span>Industrial Attachment – IT Intern</span><br>Ministry of Higher Education, Science and Technology – Nairobi, Kenya<br>- Provided technical support and assisted in maintaining government IT systems/.<br>- Contributed to digitization of academic records and internal web tools.<br>- Assisted in the maintenance and configuration of secure network infrastructure.<br>- Recognized for professionalism and adaptability in a high-level government environment.</li>
+            </ul>
+           </div>
+            <div class="tab-contets" id="education" >
+            <ul>
+                <li><span>Primary Education</span><br>2012-2019: St. Lillyanna Preparatory School<br>Grade: B</li>
+                 <li><span>Secondary Education</span><br>2020-2023: Nyeri High School<br>Grade: C-</li>
+                 <li><span>Tertiary Education</span><br>2024-Present: Cooperative University of Kenya</li>
+
+
+            </ul>
+           </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+           <i class="fa fa-code"></i>
+                    <h2>Custom Website Design</h2>
+                    <p>Bespoke designs tailored to your brand identity, audience, and goals.</p>
+                <a href="#">Learn more</a>
+                </div>
+                <div>
+               <i class="fa fa-laptop"></i>
+                    <h2>Website Redesign</h2>
+                    <p>Revitalizing outdated sites with modern aesthetics and functionality.</p>
+                <a href="#">Learn more</a>
+                </div>
+                 <div>
+                  <i class="fa fa-arrows-alt"></i>
+                    <h2>Responsive Design</h2>
+                    <p>Seamless user experience across desktops, tablets, and mobile devices.</p>
+                <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+              <div class="work"> 
+              <img src="projo/projo7.jfif">
+              <div class="layer">
+                <h3>Portfolio Website</h3>
+                <p> Design and develop web experiences that are as intuitive as they are impactful. With a focus on clean code, responsive design, and seamless user journeys, my portfolio reflects a commitment to craftsmanship.</p>
+            <a href="#"><i class="fa fa-folder-open"></i></a> 
+            </div>
+              </div>
+              <div class="work"> 
+              <img src="projo/projo8.jpg">
+              <div class="layer">
+                <h3>E-Commerce Website</h3>
+                <p> Developed a sleek, conversion-focused e-commerce platform that merges intuitive navigation with secure transactions—delivering a seamless shopping experience across devices.</p>
+            <a href="#"><i class="fa fa-shopping-cart"></i></a> 
+            </div>
+              </div>
+              <div class="work"> 
+              <img src="projo/projo6.jpg">
+              <div class="layer">
+                <h3>Business Website </h3>
+      <p>Designed and developed a dynamic business website that blends brand identity with seamless functionality—empowering client engagement, driving conversions, and elevating digital presence.</p>
+            <a href="#"><i class="fa fa-briefcase"></i></a> 
+            </div>
+              </div>
+            </div>
+            <a href="#"class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><i class="fa fa-paper-plane"></i>contact@derrickogetonto161@gmail.com<p>
+                <p><i class="fa fa-phone"></i>0794994170</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+<a href=""download class="btn btn2" >Download CV</a>
+                     </div>
+                    <div class="contact-right"> 
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email"name="Email"placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit"class="btn">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Derrick Mandela – Copying this may void your warranty.<br>
+Built with code, coffee, and questionable life choices. <i class="fa fa-lightbulb-o"></i>Proceed with admiration, not duplication.
+</p>
+        </div>
+    </div>
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contets");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+
+
+    </script>
+   <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyCtqZdEsQub6Hz_NnNzRNDu4LUaykY29HHhCOHd-7Koa_-UvxgEFPRP_PV1M8jaTwHsw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+       </body> 
+    </html>
