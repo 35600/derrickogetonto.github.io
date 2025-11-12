@@ -306,7 +306,7 @@ form input,form textarea{
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: #ff004f;
+  color: #fff;
   position: relative;
   overflow: hidden;
   transition: color 0.5s ease;
@@ -319,6 +319,7 @@ form input,form textarea{
   background: linear-gradient(to right, #ff004f, rgba(255, 0, 79, 0.2));
   filter: blur(8px);
   opacity: 0;
+    color:#fff;
   transition: opacity 0.5s ease;
   z-index: -1;
 }
@@ -416,6 +417,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
