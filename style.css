@@ -336,7 +336,8 @@ nav .fa{
    font-size: 20px; 
 }
 nav ul{ 
-    background:#ff004f ;
+    background: linear-gradient(to right, #ff004f, rgba(255, 0, 79, 0.2));
+     filter: blur(4px);
     position: fixed;
     top: 0;
     right: -200px;
@@ -386,3 +387,4 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
