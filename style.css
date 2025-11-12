@@ -298,7 +298,7 @@ form input,form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-form.btn.btn2{
+.formBtn{
    display: block;
     margin: 50px auto;
     width: fit-content;
@@ -309,7 +309,7 @@ form.btn.btn2{
     color:#fff;
     transition: background 0.5s;
 }
-form.btn.btn2:hover{
+.formBtn:hover{
     background: #ff004f;
 }
 }
@@ -398,5 +398,6 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
