@@ -306,32 +306,15 @@ form input,form textarea{
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  transition: color 0.5s ease;
-}
-
-.btn.btn3::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(to right, #ff004f, rgba(255, 0, 79, 0.2));
-  filter: blur(8px);
-  opacity: 0;
-    color:#fff;
-  transition: opacity 0.5s ease;
-  z-index: -1;
+  background-color: black;
+  color: white;
+  transition: background 0.5s, color 0.5s;
 }
 
 .btn.btn3:hover {
+  background-color: #ff004f;
   color: white;
 }
-
-.btn.btn3:hover::before {
-  opacity: 1;
-}
-
 .copyright{
     width: 100;
     text-align: center;
@@ -417,6 +400,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
