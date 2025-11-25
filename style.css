@@ -333,7 +333,7 @@ nav .fa{
 
 @media only screen and (max-width:600px){
 #header{
-    background-image: url(projo/projo11.jfif);
+    background-image: url(pjp/projo11.jfif);
 }  
 .header-text{
     margin-top: 80%;
@@ -399,6 +399,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
