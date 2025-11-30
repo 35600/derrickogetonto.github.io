@@ -376,8 +376,13 @@ nav .fa{
    font-size: 20px; 
 }
 nav ul { 
-  background: linear-gradient(to right, #ff004f, rgba(255, 0, 79, 0.2));
-  backdrop-filter: blur(4px); /* blurs background behind element */
+  background: linear-gradient(
+    to right, 
+    rgba(255, 0, 79, 0.85), 
+    rgba(255, 0, 79, 0.3)
+  );
+  backdrop-filter: blur(6px); /* blurs background behind, not text */
+  
   position: fixed;
   top: 0;
   right: -200px;
@@ -385,7 +390,13 @@ nav ul {
   height: 100vh;
   padding-top: 50px;
   z-index: 2;
-  transition: 0.5s;
+  transition: right 0.5s ease; /* smoother slide-in */
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+  border-left: 1px solid rgba(255,255,255,0.2);
 }
 
 nav ul li{
@@ -428,6 +439,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
