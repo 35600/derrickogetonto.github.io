@@ -193,6 +193,7 @@ nav ul li a:hover::after{
   display: block;
   border-radius: 10px;
 }
+
 .layer {
   position: absolute;
   left: 0;
@@ -210,8 +211,6 @@ nav ul li a:hover::after{
   text-align: center;
   font-size: 14px;
   color: #fff;
-
-  /* start hidden below */
   opacity: 0;
   transform: translateY(100%);
   transition: transform 0.5s ease, opacity 0.5s ease;
@@ -219,8 +218,10 @@ nav ul li a:hover::after{
 
 .work:hover .layer {
   opacity: 1;
-  transform: translateY(0); /* slide up into view */
+  transform: translateY(0); /* slides up into view */
 }
+
+
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
@@ -410,6 +411,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
