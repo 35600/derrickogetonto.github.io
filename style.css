@@ -360,10 +360,7 @@ nav .fa{
 
 nav ul {
   background: linear-gradient(
-    to left,
-    rgba(124, 156, 255, 0.6),   /* semi-transparent light blue */
-    rgba(78, 227, 178, 0.6)     /* semi-transparent teal green */
-  );
+    to left,linear-gradient(rgba(0,0,0,0.6), #ff004f););
   backdrop-filter: blur(6px);   /* frosted glass effect */
   position: fixed;
   top: 0;
@@ -419,6 +416,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
