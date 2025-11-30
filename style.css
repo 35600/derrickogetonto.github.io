@@ -222,7 +222,23 @@ transition:transform 0.5s;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-
+.layer{ 
+    width: 100%;
+     height: 0%;
+    background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0; bottom: 0; 
+    overflow: hidden; 
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    padding: 0 40px;
+    text-align: center; 
+    font-size: 14px;
+    transition: height 0.5s;
+}
 .layer.show 
   opacity: 1; /* toggle this class to reveal */
 }
@@ -348,7 +364,7 @@ nav .fa{
 
 @media only screen and (max-width:600px){
 #header{
-    background-image: url(pjp/projo11.jfif);
+    background-image: url(projo/pjp.jpg);
 }  
 .header-text{
     margin-top: 80%;
@@ -371,7 +387,7 @@ nav ul{
     width: 200px;
     height: 100vh;
     padding-top: 50px;
-    z-index: 2;
+    z-index: -200;
     transition: 0.5s;
 }
 nav ul li{
@@ -414,6 +430,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
