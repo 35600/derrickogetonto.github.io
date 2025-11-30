@@ -359,7 +359,7 @@ nav .fa{
 }
 
 nav ul { 
-  background: rgba(255, 0, 79, 0.85);
+  background: linear-gradient(to left, #7c9cff, #4ee3b2);
   backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
@@ -411,6 +411,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
