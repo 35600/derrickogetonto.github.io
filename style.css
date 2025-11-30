@@ -375,35 +375,20 @@ nav .fa{
     display: block;
    font-size: 20px; 
 }
+
 nav ul { 
-  background: linear-gradient(
-    to right, 
-    rgba(255, 0, 79, 0.85), 
-    rgba(255, 0, 79, 0.3)
-  );
-  backdrop-filter: blur(6px); /* blurs background behind, not text */
-  
+  background: rgba(255, 0, 79, 0.85);
+  backdrop-filter: blur(6px);
   position: fixed;
   top: 0;
   right: -200px;
   width: 200px;
   height: 100vh;
   padding-top: 50px;
-  
-  z-index: 2;
+  z-index: 9999; /* stays on top */
   transition: right 0.5s ease;
-  
-  /* text clarity */
   color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  
-  /* separation from background */
-  box-shadow: -2px 0 10px rgba(0,0,0,0.3);
-  border-left: 1px solid rgba(255,255,255,0.2);
 }
-
 nav ul li{
     display: block;
     margin: 25px;
@@ -444,6 +429,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
