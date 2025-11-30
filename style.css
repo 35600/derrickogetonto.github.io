@@ -228,7 +228,8 @@ transition:transform 0.5s;
     background:linear-gradient(rgba(0,0,0,0.6),#ff004f);
     border-radius: 10px;
     position: absolute;
-    left: 0; bottom: 0; 
+    left: 0;
+    bottom: 0; 
     overflow: hidden; 
      display: flex;
     align-items: center;
@@ -239,10 +240,6 @@ transition:transform 0.5s;
     font-size: 14px;
     transition: height 0.5s;
 }
-.layer.show 
-  opacity: 1; /* toggle this class to reveal */
-}
-
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
@@ -378,18 +375,19 @@ nav .fa{
     display: block;
    font-size: 20px; 
 }
-nav ul{ 
-    background: linear-gradient(to right, #ff004f, rgba(255, 0, 79, 0.2));
-     filter: blur(4px);
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: -200;
-    transition: 0.5s;
+nav ul { 
+  background: linear-gradient(to right, #ff004f, rgba(255, 0, 79, 0.2));
+  backdrop-filter: blur(4px); /* blurs background behind element */
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: 0.5s;
 }
+
 nav ul li{
     display: block;
     margin: 25px;
@@ -430,6 +428,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
