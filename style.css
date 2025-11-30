@@ -193,7 +193,6 @@ nav ul li a:hover::after{
   display: block;
   border-radius: 10px;
 }
-
 .layer {
   position: absolute;
   left: 0;
@@ -411,6 +410,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
