@@ -183,8 +183,8 @@ nav ul li a:hover::after{
    margin-top: 50px; 
 }
 .work {
-  position: relative;       /* anchor for absolute overlay */
-  overflow: hidden;         /* keep overlay inside */
+  position: relative;
+  overflow: hidden;
   border-radius: 10px;
 }
 
@@ -199,7 +199,7 @@ nav ul li a:hover::after{
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;             /* full size overlay */
+  height: 100%;
   background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
   border-radius: 10px;
 
@@ -212,14 +212,16 @@ nav ul li a:hover::after{
   font-size: 14px;
   color: #fff;
 
-  opacity: 0;               /* hidden by default */
-  transition: opacity 0.5s ease;
+  /* start hidden below */
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .work:hover .layer {
-  opacity: 1;               /* fade in on hover */
+  opacity: 1;
+  transform: translateY(0); /* slide up into view */
 }
-
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
@@ -409,6 +411,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
