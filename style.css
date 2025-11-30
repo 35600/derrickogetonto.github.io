@@ -358,19 +358,27 @@ nav .fa{
    font-size: 20px; 
 }
 
-nav ul { 
-  background: linear-gradient(to left,rgba(124, 156, 255, 0.6),  /* light blue, 60% opacity */rgba(78, 227, 178, 0.6)   /* teal green, 60% opacity */ );
-  backdrop-filter: blur(6px);
+nav ul {
+  background: linear-gradient(
+    to left,
+    rgba(124, 156, 255, 0.6),   /* semi-transparent light blue */
+    rgba(78, 227, 178, 0.6)     /* semi-transparent teal green */
+  );
+  backdrop-filter: blur(6px);   /* frosted glass effect */
   position: fixed;
   top: 0;
-  right: -200px;
+  right: -200px;                
   width: 200px;
   height: 100vh;
   padding-top: 50px;
-  z-index: 9999; /* stays on top */
-  transition: right 0.5s ease;
+  z-index: 9999;              
+  transition: right 0.5s ease;  
   color: #fff;
+  list-style: none;             */
+  margin: 0;
+  padding-left: 0;
 }
+
 nav ul li{
     display: block;
     margin: 25px;
@@ -411,6 +419,7 @@ nav ul .fa{
     margin-top: -40px;
     display: block;
 }
+
 
 
 
