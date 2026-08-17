@@ -194,27 +194,63 @@ nav ul li a:hover::after{
   border-radius: 10px;
 }
 
+/* Card Overlay Adjustments */
 .layer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
-  border-radius: 10px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
 }
+
+/* Internal Micro Tags */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin: 8px 0 15px 0;
+}
+
+.tech-tags span {
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Premium Badges */
+.badge {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 5px;
+}
+.badge-blue { background-color: #2b6cb0; color: #fff; }
+.badge-green { background-color: #2f855a; color: #fff; }
+.badge-purple { background-color: #6b46c1; color: #fff; }
+.badge-orange { background-color: #dd6b20; color: #fff; }
+
+/* Contact form performance styling */
+.contact-right form input, .contact-right form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
 
 .work:hover .layer {
   opacity: 1;
