@@ -193,71 +193,71 @@
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Project details, timeline, and requirements..." required></textarea>
 
-                    <button type="submit" class="btn btn3">Submit Inquiry</button>
+                      <button type="submit" class="btn btn3">Submit Inquiry</button>
                 </form>   
             </div>
-
         </div>
     </div>
 </div>
-<!-- END OF CONTACT SECTION -->
 
-                        <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>© Derrick Mandela – Copying this may void your warranty.<br>
-Built with code, coffee, and questionable life choices. <i class="fa fa-lightbulb-o"></i>Proceed with admiration, not duplication.
-</p>
-        </div>
-    </div>
+<!-- JAVASCRIPT LOGIC FOR TABS, MOBILE MENU, AND GOOGLE SHEET SUBMISSION -->
 <script>
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contets");
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-}
-    </script>
-    <script>
-        var sidemenu=document.getElementById("sidemenu")
-        function openmenu(){
-            sidemenu.style.right="0";
+    // Tab switching functionality
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contets");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
         }
-        function closemenu(){
-            sidemenu.style.right="-200px";
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 
+    // Responsive mobile side menu toggles
+    var sidemeu = document.getElementById("sidemenu");
+    
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
 
+    // Google Sheet Form Submission Logic
+    // Replace the URL string below with your actual deployment link from your Google Macro sheet
+    const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL';
+    const form = document.forms['submit-to-google-sheet'];
 
-    </script>
-   <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxWChCqBBz-_qizHcvDB2sWbONVeVmRZQI9gvii2Pozu9r3Gg7yglzyPJzP-gAENgVvTA/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML=""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        const submitButton = form.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.innerHTML = "Sending...";
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                alert('Success! Your message has been sent. Derrick will get back to you shortly.');
+                form.reset();
+                submitButton.disabled = false;
+                submitButton.innerHTML = "Submit Inquiry";
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert('Something went wrong. Please double-check your internet or try again.');
+                submitButton.disabled = false;
+                submitButton.innerHTML = "Submit Inquiry";
+            });
+    });
 </script>
-       </body> 
 
-    </html>
+</body>
+</html>
+
 
 
 
